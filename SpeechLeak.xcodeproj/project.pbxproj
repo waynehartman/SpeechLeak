@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22080FC323FB5E9A00299C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22080FC223FB5E9A00299C13 /* AppDelegate.swift */; };
+		22080FC523FB5E9A00299C13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22080FC423FB5E9A00299C13 /* SceneDelegate.swift */; };
+		22080FC723FB5E9A00299C13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22080FC623FB5E9A00299C13 /* ViewController.swift */; };
+		22080FCA23FB5E9A00299C13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22080FC823FB5E9A00299C13 /* Main.storyboard */; };
+		22080FCC23FB5E9C00299C13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22080FCB23FB5E9C00299C13 /* Assets.xcassets */; };
+		22080FCF23FB5E9C00299C13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22080FCD23FB5E9C00299C13 /* LaunchScreen.storyboard */; };
+		22080FDC23FB5EB400299C13 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22080FDA23FB5EB400299C13 /* Interface.storyboard */; };
+		22080FDE23FB5EB500299C13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22080FDD23FB5EB500299C13 /* Assets.xcassets */; };
+		22080FE523FB5EB500299C13 /* SpeechLeakWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 22080FE423FB5EB500299C13 /* SpeechLeakWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		22080FEA23FB5EB500299C13 /* NewSynthesizerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22080FE923FB5EB500299C13 /* NewSynthesizerInterfaceController.swift */; };
+		22080FEC23FB5EB500299C13 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22080FEB23FB5EB500299C13 /* ExtensionDelegate.swift */; };
+		22080FEE23FB5EB600299C13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22080FED23FB5EB600299C13 /* Assets.xcassets */; };
+		22080FF223FB5EB600299C13 /* SpeechLeakWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 22080FD823FB5EB400299C13 /* SpeechLeakWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		22080FFC23FB7A3200299C13 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22080FFB23FB7A3200299C13 /* InterfaceController.swift */; };
+		22080FFE23FB7A8C00299C13 /* ResuedSynthesizerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22080FFD23FB7A8C00299C13 /* ResuedSynthesizerInterfaceController.swift */; };
+		2208100023FB7C3300299C13 /* CustomSpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22080FFF23FB7C3300299C13 /* CustomSpeechSynthesizer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22080FE623FB5EB500299C13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22080FB723FB5E9A00299C13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22080FE323FB5EB500299C13;
+			remoteInfo = "SpeechLeakWatch Extension";
+		};
+		22080FF023FB5EB600299C13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22080FB723FB5E9A00299C13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22080FD723FB5EB400299C13;
+			remoteInfo = SpeechLeakWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22080FF623FB5EB600299C13 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				22080FE523FB5EB500299C13 /* SpeechLeakWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22080FFA23FB5EB600299C13 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				22080FF223FB5EB600299C13 /* SpeechLeakWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		22080FBF23FB5E9A00299C13 /* SpeechLeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechLeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22080FC223FB5E9A00299C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22080FC423FB5E9A00299C13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		22080FC623FB5E9A00299C13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22080FC923FB5E9A00299C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22080FCB23FB5E9C00299C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22080FCE23FB5E9C00299C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22080FD023FB5E9C00299C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22080FD823FB5EB400299C13 /* SpeechLeakWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechLeakWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22080FDB23FB5EB400299C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		22080FDD23FB5EB500299C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22080FDF23FB5EB500299C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22080FE423FB5EB500299C13 /* SpeechLeakWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SpeechLeakWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22080FE923FB5EB500299C13 /* NewSynthesizerInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSynthesizerInterfaceController.swift; sourceTree = "<group>"; };
+		22080FEB23FB5EB500299C13 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		22080FED23FB5EB600299C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22080FEF23FB5EB600299C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22080FFB23FB7A3200299C13 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		22080FFD23FB7A8C00299C13 /* ResuedSynthesizerInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResuedSynthesizerInterfaceController.swift; sourceTree = "<group>"; };
+		22080FFF23FB7C3300299C13 /* CustomSpeechSynthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSpeechSynthesizer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22080FBC23FB5E9A00299C13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22080FE123FB5EB500299C13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22080FB623FB5E9A00299C13 = {
+			isa = PBXGroup;
+			children = (
+				22080FC123FB5E9A00299C13 /* SpeechLeak */,
+				22080FD923FB5EB400299C13 /* SpeechLeakWatch */,
+				22080FE823FB5EB500299C13 /* SpeechLeakWatch Extension */,
+				22080FC023FB5E9A00299C13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22080FC023FB5E9A00299C13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22080FBF23FB5E9A00299C13 /* SpeechLeak.app */,
+				22080FD823FB5EB400299C13 /* SpeechLeakWatch.app */,
+				22080FE423FB5EB500299C13 /* SpeechLeakWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22080FC123FB5E9A00299C13 /* SpeechLeak */ = {
+			isa = PBXGroup;
+			children = (
+				22080FC223FB5E9A00299C13 /* AppDelegate.swift */,
+				22080FC423FB5E9A00299C13 /* SceneDelegate.swift */,
+				22080FC623FB5E9A00299C13 /* ViewController.swift */,
+				22080FC823FB5E9A00299C13 /* Main.storyboard */,
+				22080FCB23FB5E9C00299C13 /* Assets.xcassets */,
+				22080FCD23FB5E9C00299C13 /* LaunchScreen.storyboard */,
+				22080FD023FB5E9C00299C13 /* Info.plist */,
+			);
+			path = SpeechLeak;
+			sourceTree = "<group>";
+		};
+		22080FD923FB5EB400299C13 /* SpeechLeakWatch */ = {
+			isa = PBXGroup;
+			children = (
+				22080FDA23FB5EB400299C13 /* Interface.storyboard */,
+				22080FDD23FB5EB500299C13 /* Assets.xcassets */,
+				22080FDF23FB5EB500299C13 /* Info.plist */,
+			);
+			path = SpeechLeakWatch;
+			sourceTree = "<group>";
+		};
+		22080FE823FB5EB500299C13 /* SpeechLeakWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2208100123FB7E7500299C13 /* Interface Controllers */,
+				22080FED23FB5EB600299C13 /* Assets.xcassets */,
+				22080FFF23FB7C3300299C13 /* CustomSpeechSynthesizer.swift */,
+				22080FEB23FB5EB500299C13 /* ExtensionDelegate.swift */,
+				22080FEF23FB5EB600299C13 /* Info.plist */,
+			);
+			path = "SpeechLeakWatch Extension";
+			sourceTree = "<group>";
+		};
+		2208100123FB7E7500299C13 /* Interface Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				22080FFB23FB7A3200299C13 /* InterfaceController.swift */,
+				22080FE923FB5EB500299C13 /* NewSynthesizerInterfaceController.swift */,
+				22080FFD23FB7A8C00299C13 /* ResuedSynthesizerInterfaceController.swift */,
+			);
+			path = "Interface Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22080FBE23FB5E9A00299C13 /* SpeechLeak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22080FD323FB5E9C00299C13 /* Build configuration list for PBXNativeTarget "SpeechLeak" */;
+			buildPhases = (
+				22080FBB23FB5E9A00299C13 /* Sources */,
+				22080FBC23FB5E9A00299C13 /* Frameworks */,
+				22080FBD23FB5E9A00299C13 /* Resources */,
+				22080FFA23FB5EB600299C13 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22080FF123FB5EB600299C13 /* PBXTargetDependency */,
+			);
+			name = SpeechLeak;
+			productName = SpeechLeak;
+			productReference = 22080FBF23FB5E9A00299C13 /* SpeechLeak.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22080FD723FB5EB400299C13 /* SpeechLeakWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22080FF723FB5EB600299C13 /* Build configuration list for PBXNativeTarget "SpeechLeakWatch" */;
+			buildPhases = (
+				22080FD623FB5EB400299C13 /* Resources */,
+				22080FF623FB5EB600299C13 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22080FE723FB5EB500299C13 /* PBXTargetDependency */,
+			);
+			name = SpeechLeakWatch;
+			productName = SpeechLeakWatch;
+			productReference = 22080FD823FB5EB400299C13 /* SpeechLeakWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		22080FE323FB5EB500299C13 /* SpeechLeakWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22080FF323FB5EB600299C13 /* Build configuration list for PBXNativeTarget "SpeechLeakWatch Extension" */;
+			buildPhases = (
+				22080FE023FB5EB500299C13 /* Sources */,
+				22080FE123FB5EB500299C13 /* Frameworks */,
+				22080FE223FB5EB500299C13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpeechLeakWatch Extension";
+			productName = "SpeechLeakWatch Extension";
+			productReference = 22080FE423FB5EB500299C13 /* SpeechLeakWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22080FB723FB5E9A00299C13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Wayne Hartman";
+				TargetAttributes = {
+					22080FBE23FB5E9A00299C13 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					22080FD723FB5EB400299C13 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					22080FE323FB5EB500299C13 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 22080FBA23FB5E9A00299C13 /* Build configuration list for PBXProject "SpeechLeak" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22080FB623FB5E9A00299C13;
+			productRefGroup = 22080FC023FB5E9A00299C13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22080FBE23FB5E9A00299C13 /* SpeechLeak */,
+				22080FD723FB5EB400299C13 /* SpeechLeakWatch */,
+				22080FE323FB5EB500299C13 /* SpeechLeakWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22080FBD23FB5E9A00299C13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22080FCF23FB5E9C00299C13 /* LaunchScreen.storyboard in Resources */,
+				22080FCC23FB5E9C00299C13 /* Assets.xcassets in Resources */,
+				22080FCA23FB5E9A00299C13 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22080FD623FB5EB400299C13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22080FDE23FB5EB500299C13 /* Assets.xcassets in Resources */,
+				22080FDC23FB5EB400299C13 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22080FE223FB5EB500299C13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22080FEE23FB5EB600299C13 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22080FBB23FB5E9A00299C13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22080FC723FB5E9A00299C13 /* ViewController.swift in Sources */,
+				22080FC323FB5E9A00299C13 /* AppDelegate.swift in Sources */,
+				22080FC523FB5E9A00299C13 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22080FE023FB5EB500299C13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22080FFC23FB7A3200299C13 /* InterfaceController.swift in Sources */,
+				22080FEC23FB5EB500299C13 /* ExtensionDelegate.swift in Sources */,
+				22080FFE23FB7A8C00299C13 /* ResuedSynthesizerInterfaceController.swift in Sources */,
+				2208100023FB7C3300299C13 /* CustomSpeechSynthesizer.swift in Sources */,
+				22080FEA23FB5EB500299C13 /* NewSynthesizerInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22080FE723FB5EB500299C13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22080FE323FB5EB500299C13 /* SpeechLeakWatch Extension */;
+			targetProxy = 22080FE623FB5EB500299C13 /* PBXContainerItemProxy */;
+		};
+		22080FF123FB5EB600299C13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22080FD723FB5EB400299C13 /* SpeechLeakWatch */;
+			targetProxy = 22080FF023FB5EB600299C13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22080FC823FB5E9A00299C13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22080FC923FB5E9A00299C13 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22080FCD23FB5E9C00299C13 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22080FCE23FB5E9C00299C13 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		22080FDA23FB5EB400299C13 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22080FDB23FB5EB400299C13 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22080FD123FB5E9C00299C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22080FD223FB5E9C00299C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22080FD423FB5E9C00299C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R937YBPA22;
+				INFOPLIST_FILE = SpeechLeak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.waynehartman.SpeechLeak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22080FD523FB5E9C00299C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R937YBPA22;
+				INFOPLIST_FILE = SpeechLeak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.waynehartman.SpeechLeak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22080FF423FB5EB600299C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R937YBPA22;
+				INFOPLIST_FILE = "SpeechLeakWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.waynehartman.SpeechLeak.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		22080FF523FB5EB600299C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R937YBPA22;
+				INFOPLIST_FILE = "SpeechLeakWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.waynehartman.SpeechLeak.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		22080FF823FB5EB600299C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R937YBPA22;
+				IBSC_MODULE = SpeechLeakWatch_Extension;
+				INFOPLIST_FILE = SpeechLeakWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waynehartman.SpeechLeak.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		22080FF923FB5EB600299C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R937YBPA22;
+				IBSC_MODULE = SpeechLeakWatch_Extension;
+				INFOPLIST_FILE = SpeechLeakWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waynehartman.SpeechLeak.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22080FBA23FB5E9A00299C13 /* Build configuration list for PBXProject "SpeechLeak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22080FD123FB5E9C00299C13 /* Debug */,
+				22080FD223FB5E9C00299C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22080FD323FB5E9C00299C13 /* Build configuration list for PBXNativeTarget "SpeechLeak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22080FD423FB5E9C00299C13 /* Debug */,
+				22080FD523FB5E9C00299C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22080FF323FB5EB600299C13 /* Build configuration list for PBXNativeTarget "SpeechLeakWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22080FF423FB5EB600299C13 /* Debug */,
+				22080FF523FB5EB600299C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22080FF723FB5EB600299C13 /* Build configuration list for PBXNativeTarget "SpeechLeakWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22080FF823FB5EB600299C13 /* Debug */,
+				22080FF923FB5EB600299C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22080FB723FB5E9A00299C13 /* Project object */;
+}
